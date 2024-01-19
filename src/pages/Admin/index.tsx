@@ -7,5 +7,6 @@ export {default as ShopMall} from "./ShopMall";
 export {default as Category} from "./Category";
 export {default as Brand} from "./Brand";
 export {default as Ranks} from "./Ranks";
+export {default as AdminLogin} from "./AdminLogin";
 
 

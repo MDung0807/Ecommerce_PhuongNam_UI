@@ -17,10 +17,10 @@ export const resetPass = async (data) => {
 }
 
 export const AuthAPI = {
-    login: 'auth/login',
-    adminLogin: 'auth/admin/login',
-    companyLogin: 'auth/companies/login',
-    resetPass: 'auth/reset'
+    login: 'auths/login',
+    adminLogin: 'auths/admin/login',
+    companyLogin: 'auths/companies/login',
+    resetPass: 'auths/reset'
 }
 
 const authServices = {

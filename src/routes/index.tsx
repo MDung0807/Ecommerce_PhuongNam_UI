@@ -1,7 +1,8 @@
 import configs from '../configs'
-import {Account, Brand, Category, Home, PaymentMethod, Ranks, ShippingMethod, Shop} from '../pages/Admin'
+import {Account, AdminLogin, Brand, Category, Home, PaymentMethod, Ranks, ShippingMethod, Shop} from '../pages/Admin'
 import { AdminLayout } from '../layouts'
 import { Login } from '../pages/Customer'
+import { Component } from 'react'
 
 const privateRoutes = [
     {path: configs.adminRouters.manageAccount, component: Account, layout: AdminLayout, private: true, roles: ['ADMIN']},
@@ -13,7 +14,7 @@ const privateRoutes = [
     {path: configs.adminRouters.manageBrand, component:Brand, layout: AdminLayout, private: true, roles: ['ADMIN']},
     {path: configs.adminRouters.manageShippingMethod, component: ShippingMethod, layout: AdminLayout, private: true, roles: ['ADMIN']},
     {path: configs.adminRouters.managePaymentMethod, component:PaymentMethod, layout: AdminLayout, private: true, roles: ['ADMIN']},
-
+    {path: configs.adminRouters.login, component: AdminLogin, layout: null, private: false, roles: []}
 ]
 
 const publicRoutes = [
