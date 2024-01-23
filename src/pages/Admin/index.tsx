@@ -1,4 +1,4 @@
-export {default as Account} from "./Account";
+export {default as CustomerAccount} from "./CustomerAccount";
 export {default as PaymentMethod} from './PaymentMethod';
 export {default as Shop} from "./Shop";
 export {default as Home} from "./Home";

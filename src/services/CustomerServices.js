@@ -13,8 +13,8 @@ export const UpdateProfile = async (data) => {
     return await BaseAPI.putItem(API.updateProfile, data)
 }
 
-export const GetAll = async () => {
-    return await BaseAPI.getItems(API.getAll)
+export const GetAll = async (paging) => {
+    return await BaseAPI.getItems(API.getAll, paging)
 }
 
 export const AuthOTP = async (data) => {
